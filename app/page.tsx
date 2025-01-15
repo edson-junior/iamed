@@ -1,101 +1,126 @@
-import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div>
+      <main>
+        <div className="group block w-full">
+          <div className="flex align-middle h-full flex-col max-w-7xl mx-auto px-4 pt-20 pb-20 relative">
+            <div className="max-w-screen-sm">
+              <h1 className=" mb-4">{`Hi! My name is Edson!`}</h1>
+            </div>
+            <div>
+              <p className="text-2xl lg:text-6xl mb-4">
+                Freelance Frontend Developer
+                {/* based in Milan, Italy */}
+              </p>
+              <div className="flex gap-4">
+                <Button asChild size="lg">
+                  <Link href="/contact">Resume</Link>
+                </Button>
+                <Button asChild size="lg">
+                  <Link href="/contact">Get in touch</Link>
+                </Button>
+              </div>
+            </div>
+          </div>
         </div>
+        <section className="prose lg:prose-lg max-w-7xl mx-auto px-4 py-8">
+          <h2>About</h2>
+          <p>
+            Experienced Frontend Developer, with exposure to different
+            industries for over 13 years, mastering skills in React, HTML, CSS,
+            Vanilla Javascript, Typescript, git, performance, and accessibility.
+            With extensive e-commerce experience, I have worked with platforms
+            such as Hybris, Salesforce Commerce Cloud, and VTEX.
+          </p>
+          <p>
+            I am a good communicator, adaptable, and interested in
+            problem-solving, teamwork, and continuous learning. I also enjoy
+            coaching new team members/junior colleagues.
+          </p>
+          <p>
+            I am ready for a new challenge where I can bring value with my
+            knowledge and develop more in a dynamic environment.
+          </p>
+        </section>
+
+        <section className="prose lg:prose-lg max-w-7xl mx-auto px-4 py-8">
+          <h2>Experience</h2>
+          Work History Frontend Developer Self-employed, Milan Relevant skills:
+          React, Typescript, Next.js, Tailwind, shadcn, Sanity.io, Jest, React
+          Testing Library, Storybook Milanized.com • February 2024 - Present
+          implemented the website with React, Typescript, Next.js, Tailwind,
+          Sanity.io built the design system with Storybook wrote unit tests with
+          Jest and React Testing Library Frontend Developer Emakina.NL,
+          Amsterdam Relevant skills: React, Typescript, Stencil.js, PWA kit,
+          Chakra UI, SSR, Redux, React Query, Jest, React Testing Library, Mock
+          Service Worker (msw), Storybook, Webpack, Cypress.js, NPM Package
+          Development and Publication, Microfrontends, Azure DevOps. During my
+          time at Emakina.NL I worked on the following projects: Lookers •
+          January 2023 - December 2023 implemented the new checkout journey with
+          Salesforce’s PWA kit, React, TypeScript, React Query, and Chakra UI
+          built their design system with Storybook wrote unit tests with Jest
+          and Mock Service Worker coached junior developers WE Fashion • April
+          2022 - January 2023 worked with Salesforce Commerce Cloud, mostly on
+          frontend and occasionally backend rolled out new features and bug
+          fixes Jan 2021 - Jan 2024 Experienced Frontend Developer, with
+          exposure to different industries for over 13 years, mastering skills
+          in React, HTML, CSS, Vanilla Javascript, Typescript, git, performance,
+          and accessibility. With extensive e-commerce experience, I have worked
+          with platforms such as Hybris, Salesforce Commerce Cloud, and VTEX. I
+          am a good communicator, adaptable, and interested in problem-solving,
+          teamwork, and continuous learning. I also enjoy coaching new team
+          members/junior colleagues. React I am ready for a new challenge where
+          I can bring value with my knowledge Bugaboo • November 2021 - March
+          2022 rolled out new features, modernization of legacy code, and A/B
+          tests for the B2C channel coached junior developers Suitsupply •
+          January 2021 - November 2021 utilized stencil.js for building
+          applications, components, design systems, and orchestrating micro
+          frontends collaborated on the design system and their micro frontend
+          Custom Made worked on the Size Passport team and built its micro
+          frontend, Frontend Developer G-Star RAW, Amsterdam Relevant skills:
+          Javascript, jQuery, React, Redux, Jest, Enzyme, Sass, Styled
+          Components, Webpack, RequireJS, Grunt built the apps React Checkout
+          and React Loyalty Program implemented new functionalities, bug fixes,
+          e2e tests, codebase, and performance improvements coached and mentored
+          junior developers Frontend Developer Gainsight (formerly inSided),
+          Amsterdam Relevant skills: Javascript, SCSS, Gulp, Webpack, Twig
+          implemented websites using their SaaS community platform. Frontend
+          Developer Enext, Sao Paulo Relevant skills: HTML, Sass, Javascript,
+          jQuery, Git implemented large-scale websites using e-commerce
+          platforms such as VTEX, Hybris, and ATG. Frontend Developer
+          Self-employed, Sao Paulo Relevant skills: HTML, Sass, Less,
+          Javascript, jQuery, Git implemented VTEX B2C e-commerce websites for
+          well-known Brazilian companies such as Buscapé Company, Brandsclub,
+          and Profit-e. Frontend Developer VTEX, Sao Paulo Relevant skills:
+          HTML, CSS, Javascript, jQuery, SVN, Git implemented VTEX themes and
+          new conversion-centered features while enhancing existing e-commerce
+          websites built on VTEX by implementing new customer-specific features
+          and bug fixes.
+        </section>
+
+        <section className="prose lg:prose-lg max-w-7xl mx-auto px-4 py-8">
+          <h2>work</h2>
+          add work here
+        </section>
+
+        <section className="prose lg:prose-lg max-w-7xl mx-auto px-4 py-8">
+          <h2>testimotials</h2>
+          add testimonials here
+        </section>
+
+        <section className="prose lg:prose-lg max-w-7xl mx-auto px-4 py-8">
+          <h2>latest posts</h2>
+          add latest posts here
+        </section>
+
+        <section className="prose lg:prose-lg max-w-7xl mx-auto px-4 py-8">
+          <h2>contact</h2>
+          add contact and social medias
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
