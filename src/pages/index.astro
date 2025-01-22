@@ -1,128 +1,124 @@
 ---
+import Layout from '@/layouts/Layout.astro'
 import '@/styles/globals.css'
-import { Button, buttonVariants } from '@/components/ui/button'
 ---
 
-<!-- import { Button } from "@/components/ui/button";
-import Link from "next/link"; -->
 
-
-<div>
-  <main>
-    <div class="group block w-full">
-      <div class="flex align-middle h-full flex-col max-w-7xl mx-auto px-4 pt-20 pb-20 relative">
-        <div class="max-w-screen-sm">
-          <h1 class=" mb-4">{`Hi! My name is Edson!`}</h1>
-        </div>
-        <div>
-          <p class="text-2xl lg:text-6xl mb-4">
-            Freelance Frontend Developer
-            {/* based in Milan, Italy */}
-          </p>
-          <div class="flex gap-4">
-            <a href="/resume" class={buttonVariants({ size: 'lg' })}>
-              Resume
-            </a>
-            <a href="/contact" class={buttonVariants({ size: 'lg' })}>
-              Get in touch
-            </a>
-          </div>
+<Layout>
+  <div class="group block w-full">
+    <div class="flex align-middle h-full flex-col max-w-7xl mx-auto px-4 pt-20 pb-20 relative">
+      <div class="max-w-screen-sm">
+        <h1 class=" mb-4">{`Hi! My name is Edson!`}</h1>
+      </div>
+      <div>
+        <p class="text-2xl lg:text-6xl mb-4">
+          Freelance Frontend Developer
+          {/* based in Milan, Italy */}
+        </p>
+        <div class="flex gap-4">
+          <a href="/resume">
+            Resume
+          </a>
+          <a href="/contact">
+            Get in touch
+          </a>
         </div>
       </div>
     </div>
-    <section class="prose lg:prose-lg max-w-7xl mx-auto px-4 py-8">
-      <h2>About</h2>
-      <p>
-        Experienced Frontend Developer, with exposure to different
-        industries for over 13 years, mastering skills in React, HTML, CSS,
-        Vanilla Javascript, Typescript, git, performance, and accessibility.
-        With extensive e-commerce experience, I have worked with platforms
-        such as Hybris, Salesforce Commerce Cloud, and VTEX.
-      </p>
-      <p>
-        I am a good communicator, adaptable, and interested in
-        problem-solving, teamwork, and continuous learning. I also enjoy
-        coaching new team members/junior colleagues.
-      </p>
-      <p>
-        I am ready for a new challenge where I can bring value with my
-        knowledge and develop more in a dynamic environment.
-      </p>
-    </section>
+  </div>
+  <section class="prose lg:prose-lg max-w-7xl mx-auto px-4 py-8">
+    <h2>About</h2>
+    <p>
+      Experienced Frontend Developer, with exposure to different
+      industries for over 13 years, mastering skills in React, HTML, CSS,
+      Vanilla Javascript, Typescript, git, performance, and accessibility.
+      With extensive e-commerce experience, I have worked with platforms
+      such as Hybris, Salesforce Commerce Cloud, and VTEX.
+    </p>
+    <p>
+      I am a good communicator, adaptable, and interested in
+      problem-solving, teamwork, and continuous learning. I also enjoy
+      coaching new team members/junior colleagues.
+    </p>
+    <p>
+      I am ready for a new challenge where I can bring value with my
+      knowledge and develop more in a dynamic environment.
+    </p>
+  </section>
 
-    <section class="prose lg:prose-lg max-w-7xl mx-auto px-4 py-8">
-      <h2>Experience</h2>
-      Work History Frontend Developer Self-employed, Milan Relevant skills:
-      React, Typescript, Next.js, Tailwind, shadcn, Sanity.io, Jest, React
-      Testing Library, Storybook Milanized.com • February 2024 - Present
-      implemented the website with React, Typescript, Next.js, Tailwind,
-      Sanity.io built the design system with Storybook wrote unit tests with
-      Jest and React Testing Library Frontend Developer Emakina.NL,
-      Amsterdam Relevant skills: React, Typescript, Stencil.js, PWA kit,
-      Chakra UI, SSR, Redux, React Query, Jest, React Testing Library, Mock
-      Service Worker (msw), Storybook, Webpack, Cypress.js, NPM Package
-      Development and Publication, Microfrontends, Azure DevOps. During my
-      time at Emakina.NL I worked on the following projects: Lookers •
-      January 2023 - December 2023 implemented the new checkout journey with
-      Salesforce’s PWA kit, React, TypeScript, React Query, and Chakra UI
-      built their design system with Storybook wrote unit tests with Jest
-      and Mock Service Worker coached junior developers WE Fashion • April
-      2022 - January 2023 worked with Salesforce Commerce Cloud, mostly on
-      frontend and occasionally backend rolled out new features and bug
-      fixes Jan 2021 - Jan 2024 Experienced Frontend Developer, with
-      exposure to different industries for over 13 years, mastering skills
-      in React, HTML, CSS, Vanilla Javascript, Typescript, git, performance,
-      and accessibility. With extensive e-commerce experience, I have worked
-      with platforms such as Hybris, Salesforce Commerce Cloud, and VTEX. I
-      am a good communicator, adaptable, and interested in problem-solving,
-      teamwork, and continuous learning. I also enjoy coaching new team
-      members/junior colleagues. React I am ready for a new challenge where
-      I can bring value with my knowledge Bugaboo • November 2021 - March
-      2022 rolled out new features, modernization of legacy code, and A/B
-      tests for the B2C channel coached junior developers Suitsupply •
-      January 2021 - November 2021 utilized stencil.js for building
-      applications, components, design systems, and orchestrating micro
-      frontends collaborated on the design system and their micro frontend
-      Custom Made worked on the Size Passport team and built its micro
-      frontend, Frontend Developer G-Star RAW, Amsterdam Relevant skills:
-      Javascript, jQuery, React, Redux, Jest, Enzyme, Sass, Styled
-      Components, Webpack, RequireJS, Grunt built the apps React Checkout
-      and React Loyalty Program implemented new functionalities, bug fixes,
-      e2e tests, codebase, and performance improvements coached and mentored
-      junior developers Frontend Developer Gainsight (formerly inSided),
-      Amsterdam Relevant skills: Javascript, SCSS, Gulp, Webpack, Twig
-      implemented websites using their SaaS community platform. Frontend
-      Developer Enext, Sao Paulo Relevant skills: HTML, Sass, Javascript,
-      jQuery, Git implemented large-scale websites using e-commerce
-      platforms such as VTEX, Hybris, and ATG. Frontend Developer
-      Self-employed, Sao Paulo Relevant skills: HTML, Sass, Less,
-      Javascript, jQuery, Git implemented VTEX B2C e-commerce websites for
-      well-known Brazilian companies such as Buscapé Company, Brandsclub,
-      and Profit-e. Frontend Developer VTEX, Sao Paulo Relevant skills:
-      HTML, CSS, Javascript, jQuery, SVN, Git implemented VTEX themes and
-      new conversion-centered features while enhancing existing e-commerce
-      websites built on VTEX by implementing new customer-specific features
-      and bug fixes.
-    </section>
+  <section class="prose lg:prose-lg max-w-7xl mx-auto px-4 py-8">
+    <h2>Experience</h2>
+    Work History Frontend Developer Self-employed, Milan Relevant skills:
+    React, Typescript, Next.js, Tailwind, shadcn, Sanity.io, Jest, React
+    Testing Library, Storybook Milanized.com • February 2024 - Present
+    implemented the website with React, Typescript, Next.js, Tailwind,
+    Sanity.io built the design system with Storybook wrote unit tests with
+    Jest and React Testing Library Frontend Developer Emakina.NL,
+    Amsterdam Relevant skills: React, Typescript, Stencil.js, PWA kit,
+    Chakra UI, SSR, Redux, React Query, Jest, React Testing Library, Mock
+    Service Worker (msw), Storybook, Webpack, Cypress.js, NPM Package
+    Development and Publication, Microfrontends, Azure DevOps. During my
+    time at Emakina.NL I worked on the following projects: Lookers •
+    January 2023 - December 2023 implemented the new checkout journey with
+    Salesforce’s PWA kit, React, TypeScript, React Query, and Chakra UI
+    built their design system with Storybook wrote unit tests with Jest
+    and Mock Service Worker coached junior developers WE Fashion • April
+    2022 - January 2023 worked with Salesforce Commerce Cloud, mostly on
+    frontend and occasionally backend rolled out new features and bug
+    fixes Jan 2021 - Jan 2024 Experienced Frontend Developer, with
+    exposure to different industries for over 13 years, mastering skills
+    in React, HTML, CSS, Vanilla Javascript, Typescript, git, performance,
+    and accessibility. With extensive e-commerce experience, I have worked
+    with platforms such as Hybris, Salesforce Commerce Cloud, and VTEX. I
+    am a good communicator, adaptable, and interested in problem-solving,
+    teamwork, and continuous learning. I also enjoy coaching new team
+    members/junior colleagues. React I am ready for a new challenge where
+    I can bring value with my knowledge Bugaboo • November 2021 - March
+    2022 rolled out new features, modernization of legacy code, and A/B
+    tests for the B2C channel coached junior developers Suitsupply •
+    January 2021 - November 2021 utilized stencil.js for building
+    applications, components, design systems, and orchestrating micro
+    frontends collaborated on the design system and their micro frontend
+    Custom Made worked on the Size Passport team and built its micro
+    frontend, Frontend Developer G-Star RAW, Amsterdam Relevant skills:
+    Javascript, jQuery, React, Redux, Jest, Enzyme, Sass, Styled
+    Components, Webpack, RequireJS, Grunt built the apps React Checkout
+    and React Loyalty Program implemented new functionalities, bug fixes,
+    e2e tests, codebase, and performance improvements coached and mentored
+    junior developers Frontend Developer Gainsight (formerly inSided),
+    Amsterdam Relevant skills: Javascript, SCSS, Gulp, Webpack, Twig
+    implemented websites using their SaaS community platform. Frontend
+    Developer Enext, Sao Paulo Relevant skills: HTML, Sass, Javascript,
+    jQuery, Git implemented large-scale websites using e-commerce
+    platforms such as VTEX, Hybris, and ATG. Frontend Developer
+    Self-employed, Sao Paulo Relevant skills: HTML, Sass, Less,
+    Javascript, jQuery, Git implemented VTEX B2C e-commerce websites for
+    well-known Brazilian companies such as Buscapé Company, Brandsclub,
+    and Profit-e. Frontend Developer VTEX, Sao Paulo Relevant skills:
+    HTML, CSS, Javascript, jQuery, SVN, Git implemented VTEX themes and
+    new conversion-centered features while enhancing existing e-commerce
+    websites built on VTEX by implementing new customer-specific features
+    and bug fixes.
+  </section>
 
-    <section class="prose lg:prose-lg max-w-7xl mx-auto px-4 py-8">
-      <h2>work</h2>
-      add work here
-    </section>
+  <section class="prose lg:prose-lg max-w-7xl mx-auto px-4 py-8">
+    <h2>work</h2>
+    add work here
+  </section>
 
-    <section class="prose lg:prose-lg max-w-7xl mx-auto px-4 py-8">
-      <h2>testimotials</h2>
-      add testimonials here
-    </section>
+  <section class="prose lg:prose-lg max-w-7xl mx-auto px-4 py-8">
+    <h2>testimotials</h2>
+    add testimonials here
+  </section>
 
-    <section class="prose lg:prose-lg max-w-7xl mx-auto px-4 py-8">
-      <h2>latest posts</h2>
-      add latest posts here
-    </section>
+  <section class="prose lg:prose-lg max-w-7xl mx-auto px-4 py-8">
+    <h2>latest posts</h2>
+    add latest posts here
+  </section>
 
-    <section class="prose lg:prose-lg max-w-7xl mx-auto px-4 py-8">
-      <h2>contact</h2>
-      add contact and social medias
-    </section>
-  </main>
-</div>
+  <section class="prose lg:prose-lg max-w-7xl mx-auto px-4 py-8">
+    <h2>contact</h2>
+    add contact and social medias
+  </section>
+</Layout>
+
